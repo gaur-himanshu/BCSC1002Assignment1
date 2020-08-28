@@ -12,7 +12,7 @@ public class Book {
 	private String bookAuthor;
 	private String iSBNNumber;
 
-	// constructer method without parameter.
+	// constructer() method without parameter.
 
 	public Book() {
 	
@@ -21,7 +21,7 @@ public class Book {
 		iSBNNumber = "0000000000000";
 	}
 
-	// Costructer method with parameter.
+	// Costructer() method with parameter.
 
 	public Book(String bookName, String bookAuthor, String iSBNNumber) {
 	
@@ -87,11 +87,11 @@ public class Book {
 
 		return iSBNNumber;
 	}
-	// this tostring method converts the object to string.
+	// this tostring() method converts the object to string.
 	public String toString() {
         return String.format("Book Name: %s, Book Author: %s, ISBN Number: %s", getBookName(), getBookAuthor(), getISBNNumber());
 	}
-	// Book.equals(Book1)
+	// the equals() and the hashcode() methods.
     @Override
     public boolean equals(Object o) {
         if (this == o) { // video == video1
