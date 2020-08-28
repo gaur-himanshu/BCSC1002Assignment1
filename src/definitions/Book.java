@@ -12,6 +12,32 @@ public class Book
 	private String bookAuthor;
 	private String iSBNNumber;
 
+	// constructer method without parameter.
+
+	public Book()
+	{
+		bookName = "GLA Prospectus";
+		bookAuthor = "GLA";
+		iSBNNumber = "0000000000000";
+	}
+
+	// Costructer method with parameter.
+
+	public Book(String bookName, String bookAuthor, String iSBNNumber)
+	{
+		this.bookName = bookName;
+		this.bookAuthor = bookAuthor;
+		if (iSBNNumber.length() == 13)
+		{
+			this.iSBNNumber = iSBNNumber;
+		}
+		else
+		{
+			System.out.println("please enter 13 digit number");
+		}
+
+	}
+
 
 
 
