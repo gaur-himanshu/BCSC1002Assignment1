@@ -13,11 +13,34 @@ public class Student {
 	private String middleName;
 	private String lastName;
 	private long int universityRollNumber;
-	private int bookIssued;
+	private int issuedBooks;
 	private String[] book;
 	
+	// constructor() method without parameter.
 	
+	public Student() {
+		firstName = " ";
+		middleName = " ";
+		lastName = " ";
+		universityRollNumber = 000000L;
+		issuedBooks = 0;
+		book[0] = " ";
+	}
+	
+	// constructor() method with parameters.
 
+	public Student(String firstName, String middleName, String lastName, int universityRollNumber, int bookIssued, String[] book) {
+	
+		this.firstName = firstName;
+		this.middleName = middleName;
+		this.lastName = lastName;
+		this.universityRollNumber = universityRollNumber;
+		this.issuedBooks = issuedBooks;
+		this.book = book;
+	}
+	
+	
+    
 
 	public void setFirstName(String firstName) {
 	
@@ -59,14 +82,14 @@ public class Student {
 		return universityRollNumber;
 	}
 
-	public void setBookIssued(int bookIssued) {
+	public void setIssuedBooks(int issuedBooks) {
 	
-		this.bookIssued = bookIssued;
+		this.issuedBooks = issuedBooks;
 	}
 
-	public int getBookIssued() {
+	public int getIssuedBooks() {
 	
-		return bookIssued;
+		return issuedBooks;
 	}
 
 	public void setBook(String[] book) {
