@@ -66,7 +66,7 @@ public class Book {
 	}
 
 	public void setISBNNumber(String iSBNNumber) {
-	{
+	
 		
 
 		if (iSBNNumber.length() == 13) {
@@ -91,3 +91,21 @@ public class Book {
 	public String toString() {
         return String.format("Book Name: %s, Book Author: %s, ISBN Number: %s", getBookName(), getBookAuthor(), getISBNNumber());
 	}
+	// Book.equals(Book1)
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) { // video == video1
+            return true;
+        }
+        if (o == null || this.getClass() != o.getClass()) {
+            return false;
+        }
+        Book book = (Book) o;
+        return this.getBookName().equals(Book.getBookName()) && this.getBookAuthor().equals(getBookAuthor)) && this.getISBNNumber().equals(getISBNNumber());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBookName(), getBookAuthor(), getISBNNumber());
+    }
+}
