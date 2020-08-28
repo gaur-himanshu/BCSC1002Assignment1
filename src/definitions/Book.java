@@ -5,8 +5,8 @@
  * */
 package definitions;
 
-public class Book
-{
+public class Book {
+
 
 	private String bookName;
 	private String bookAuthor;
@@ -14,25 +14,25 @@ public class Book
 
 	// constructer method without parameter.
 
-	public Book()
-	{
-		bookName = "GLA Prospectus";
-		bookAuthor = "GLA";
+	public Book() {
+	
+		bookName = " ";
+		bookAuthor = " ";
 		iSBNNumber = "0000000000000";
 	}
 
 	// Costructer method with parameter.
 
-	public Book(String bookName, String bookAuthor, String iSBNNumber)
-	{
+	public Book(String bookName, String bookAuthor, String iSBNNumber) {
+	
 		this.bookName = bookName;
 		this.bookAuthor = bookAuthor;
-		if (iSBNNumber.length() == 13)
-		{
+		if (iSBNNumber.length() == 13) {
+		
 			this.iSBNNumber = iSBNNumber;
 		}
-		else
-		{
+		else {
+		
 			System.out.println("please enter 13 digit number");
 		}
 
@@ -41,39 +41,40 @@ public class Book
 
 
 
-	public void setBookName(String bookName)
-	{
+	public void setBookName(String bookName) {
+	
 
 		this.bookName = bookName;
 	}
 
-	public String getBookName()
-	{
+	public String getBookName() {
+	
 
 		return bookName;
 	}
 
-	public void setBookAuthor(String bookAuthor)
-	{
+	public void setBookAuthor(String bookAuthor) {
+	
 
 		this.bookAuthor = bookAuthor;
 	}
 
-	public String getBookAuthor()
-	{
+	public String getBookAuthor() {
+	
 
 		return bookAuthor;
 	}
 
-	public void setISBNNumber(String iSBNNumber)
+	public void setISBNNumber(String iSBNNumber) {
 	{
+		
 
-		if (iSBNNumber.length() == 13)
-		{
+		if (iSBNNumber.length() == 13) {
+		
 			this.iSBNNumber = iSBNNumber;
 		}
-		else
-		{
+		else {
+		
 			System.out.println("Please enter the correct ISBN number,it should be of 13 digit");
 
 		}
@@ -81,9 +82,12 @@ public class Book
 
 	}
 
-	public String getISBNNumber()
-	{
+	public String getISBNNumber() {
+	
 
 		return iSBNNumber;
 	}
-}
+	// this tostring method converts the object to string.
+	public String toString() {
+        return String.format("Book Name: %s, Book Author: %s, ISBN Number: %s", getBookName(), getBookAuthor(), getISBNNumber());
+	}
