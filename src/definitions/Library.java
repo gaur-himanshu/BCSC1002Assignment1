@@ -36,6 +36,12 @@ public class Library {
 	public void issueTheBook(String name) {
         System.out.println("The " + name + "is " + "issued on the name of " + getFirstName() + " " + getMiddleName() + " " + getLastName() ".");
     }
+	
+	// this method return a book to Library from Student.
+	
+	public void doReturn(String name) {
+        System.out.println("Thank you for returning \"" + name + "\". Hope you liked it.");
+    }
 
 	public void setAvailableBooks(Book[] availableBooks) {
 	
