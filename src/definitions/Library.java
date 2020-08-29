@@ -9,7 +9,7 @@ public class Library {
 
 	private Book[] availableBooks;
 	
-	// constructor() method without parameter.
+	// the constructor() method without parameter.
 	
 	public Library() {
         this.availableBook = new Book[10000];
@@ -18,11 +18,17 @@ public class Library {
         }
     }
 
-	// constructor() method with parameter.
+	// the constructor() method with parameter.
 	
 	public Library(Book[] availableBooks)
 	{
 		this.availableBooks = availableBooks;
 	}
 	
+	// the toString method
+	
+    @Override
+    public String toString() {
+        return Arrays.toString(availableBooks);
+    }
 }
