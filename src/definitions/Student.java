@@ -42,12 +42,6 @@ public class Student {
 		this.issuedBooksName = issuedBooksName;
 	}
 	
-	// the issuedBook() shows on whose name the book issued.
-	
-	public void issuedBook(String name) {
-        System.out.println(name + " is now issued to " + firstName + " " + middleName + " " + lastName + ".");
-    }
-	
     
 
 	public void setFirstName(String firstName) {
