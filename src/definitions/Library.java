@@ -24,6 +24,16 @@ public class Library {
 	{
 		this.availableBooks = availableBooks;
 	}
+
+	public void setAvailableBooks(Book[] availableBooks)
+	{
+		this.availableBooks = availableBooks;
+	}
+
+	public Book[] getAvailableBooks()
+	{
+		return availableBooks.clone();
+	}
 	
 	// the toString method
 	
