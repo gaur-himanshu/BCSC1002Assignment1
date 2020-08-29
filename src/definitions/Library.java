@@ -42,6 +42,14 @@ public class Library {
 	public void doReturn(String name) {
         System.out.println("Thank you for returning \"" + name + "\". Hope you liked it.");
     }
+	
+	// this method will list all the library books.
+	
+	public void listOfBooks() {
+        for (Book book : availableBooks) {
+            System.out.println(book);
+        }
+    }
 
 	public void setAvailableBooks(Book[] availableBooks) {
 	
