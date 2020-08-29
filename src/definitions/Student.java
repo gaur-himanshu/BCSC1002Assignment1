@@ -14,7 +14,7 @@ public class Student {
 	private String lastName;
 	private long int universityRollNumber;
 	private int issuedBooks;
-	private String[] book;
+	private Book[] issuedBooksName;
 	
 	// constructor() method without parameter.
 	
@@ -24,19 +24,22 @@ public class Student {
 		lastName = " ";
 		universityRollNumber = 000000L;
 		issuedBooks = 0;
-		book[0] = " ";
-	}
+		this.issuedBooksName= new Book[6];
+        for (int i = 0; i < issuedBooks; i++) {
+            issuedBooksName[i] = new Book("Book " + (i + 1));
+        }
+    }
 	
 	// constructor() method with parameters.
 
-	public Student(String firstName, String middleName, String lastName, int universityRollNumber, int bookIssued, String[] book) {
+	public Student(String firstName, String middleName, String lastName, int universityRollNumber, int bookIssued, Boom[] issuedBooksName) {
 	
 		this.firstName = firstName;
 		this.middleName = middleName;
 		this.lastName = lastName;
 		this.universityRollNumber = universityRollNumber;
 		this.issuedBooks = issuedBooks;
-		this.book = book;
+		this.issuedBooksName = issuedBooksName;
 	}
 	
 	
@@ -92,14 +95,14 @@ public class Student {
 		return issuedBooks;
 	}
 
-	public void setBook(String[] book) {
+	public void setIssuedBooksName(Book[] issuedBooksName) {
 	
-		this.book = book;
+		this.issuedBooksName= issuedBooksName;
 	}
 
-	public String[] getBook() {
+	public Book[] getIssuedBooksName() {
 	
-		return book.clone();
+		return issuedBookName.clone();
     }
 	
 	// the equals method 
@@ -113,6 +116,6 @@ public class Student {
             return false;
         }
         VideoStore that = (VideoStore) o;
-        return this.getFirstName().equals(getFirstName()) && this.getMiddleName().equals(getMiddleName()) && this.getLastName().equals(getLastName()) && this.getUniversityRollNumber() == getUniversityRollNumber() && this.getIssuedBooks() == getIssuedBooks && Arrays.equals(getStore(), that.getStore());
+        return this.getFirstName().equals(getFirstName()) && this.getMiddleName().equals(getMiddleName()) && this.getLastName().equals(getLastName()) && this.getUniversityRollNumber() == getUniversityRollNumber() && this.getIssuedBooks() == getIssuedBooks && Arrays.equals(getIssuedBooksName(), that.getIssuedBooksName());
     }
 }
