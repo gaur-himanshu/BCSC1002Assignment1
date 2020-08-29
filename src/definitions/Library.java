@@ -30,6 +30,12 @@ public class Library {
 	public void addBook(String name) {
         System.out.println(name + " is now added to the Library.");
     }
+	
+	// this method will show the name of student who issue a book.
+	
+	public void issueTheBook(String name) {
+        System.out.println("The " + name + "is " + "issued on the name of " + getFirstName() + " " + getMiddleName() + " " + getLastName() ".");
+    }
 
 	public void setAvailableBooks(Book[] availableBooks) {
 	
