@@ -20,18 +20,24 @@ public class Library {
 
 	// the constructor() method with parameter.
 	
-	public Library(Book[] availableBooks)
-	{
+	public Library(Book[] availableBooks) {
+	
+		this.availableBooks = availableBooks;
+	}
+	
+	// this method add a new Book to our Library.
+	
+	public void addBook(String name) {
+        System.out.println(name + " is now added to the Library.");
+    }
+
+	public void setAvailableBooks(Book[] availableBooks) {
+	
 		this.availableBooks = availableBooks;
 	}
 
-	public void setAvailableBooks(Book[] availableBooks)
-	{
-		this.availableBooks = availableBooks;
-	}
-
-	public Book[] getAvailableBooks()
-	{
+	public Book[] getAvailableBooks() {
+	
 		return availableBooks.clone();
 	}
 	
