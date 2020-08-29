@@ -31,4 +31,24 @@ public class Library {
     public String toString() {
         return Arrays.toString(availableBooks);
     }
+	
+	// the equals and hashcode method
+	
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Library that = (Library) o;
+        return Arrays.equals(getAvailableBooks(), that.getAvailableBook());
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getAvailableBooks());
+    }
 }
