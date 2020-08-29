@@ -99,6 +99,20 @@ public class Student {
 
 	public String[] getBook() {
 	
-		return book;
+		return book.clone();
+    }
+	
+	// the equals method 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        VideoStore that = (VideoStore) o;
+        return this.getFirstName().equals(getFirstName()) && this.getMiddleName().equals(getMiddleName()) && this.getLastName().equals(getLastName()) && this.getUniversityRollNumber() == getUniversityRollNumber() && this.getIssuedBooks() == getIssuedBooks && Arrays.equals(getStore(), that.getStore());
     }
 }
