@@ -40,11 +40,17 @@ public class Student {
 		this.issuedBooksName = issuedBooksName;
 	}
 	
-    // this method will show the book name which is issed to Student.
+    // this method will show the book name which is issued to Student.
 	
 	public void addBook(String name) {
         System.out.println(name + " is issued to the Student.");
     }
+	
+	// this method will shkw the returned book.
+	
+	public void returnBook(String name) {
+		System.out.println(name + "book is returned");
+	}
 
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
