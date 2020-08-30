@@ -42,6 +42,10 @@ public class Student {
 		this.issuedBooksName = issuedBooksName;
 	}
 	
+    // this method will show the book name which is issed to Student.
+	
+	public void addBook(String name) {
+        System.out.println(name + " is issued to the Student.");
     
 
 	public void setFirstName(String firstName) {
