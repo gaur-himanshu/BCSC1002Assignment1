@@ -96,7 +96,7 @@ public class Student {
 	
 	// the toString method
 	
-	@Override
+	@override
     public String toString() {
         return "Student{" +
 			"firstName = " + firstName + 
