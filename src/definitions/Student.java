@@ -8,7 +8,6 @@ package definitions;
 import java.util.Arrays;
 
 public class Student {
-	
 	private String firstName;
 	private String middleName;
 	private String lastName;
@@ -33,7 +32,6 @@ public class Student {
 	// constructor() method with parameters.
 
 	public Student(String firstName, String middleName, String lastName, int universityRollNumber, int bookIssued, Boom[] issuedBooksName) {
-	
 		this.firstName = firstName;
 		this.middleName = middleName;
 		this.lastName = lastName;
@@ -49,63 +47,65 @@ public class Student {
     
 
 	public void setFirstName(String firstName) {
-	
 		this.firstName = firstName;
 	}
 
 	public String getFirstName() {
-	
 		return firstName;
 	}
 
 	public void setMiddleName(String middleName) {
-	
 		this.middleName = middleName;
 	}
 
 	public String getMiddleName() {
-	
 		return middleName;
 	}
 
 	public void setLastName(String lastName) {
-	
 		this.lastName = lastName;
 	}
 
 	public String getLastName() {
-	
 		return lastName;
 	}
 
 	public void setUniversityRollNumber(int universityRollNumber) {
-	
 		this.universityRollNumber = universityRollNumber;
 	}
 
 	public int getUniversityRollNumber() {
-	
 		return universityRollNumber;
 	}
 
 	public void setIssuedBooks(int issuedBooks) {
-	
 		this.issuedBooks = issuedBooks;
 	}
 
 	public int getIssuedBooks() {
-	
 		return issuedBooks;
 	}
 
 	public void setIssuedBooksName(Book[] issuedBooksName) {
-	
 		this.issuedBooksName= issuedBooksName;
 	}
 
 	public Book[] getIssuedBooksName() {
+	    return issuedBookName.clone();
+    }
 	
-		return issuedBookName.clone();
+	// the toString method
+	
+	@Override
+    public String toString() {
+        return "Student{" +
+			"firstName = " + firstName + 
+			", middleName = " + middleName + 
+			", lastName = " + lastName + 
+			", universityRollNumber = " + universityRollNumber +
+			", issuedBooks = " + numberOfBooksIssued +
+			", issuedBooksName = " + Arrays.toString(issuedBooksName) +
+			'}';
     }
 	
 	// the equals method 
