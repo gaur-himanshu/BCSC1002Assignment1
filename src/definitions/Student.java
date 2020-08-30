@@ -49,7 +49,7 @@ public class Student {
 	// this method will shkw the returned book.
 	
 	public void returnBook(String name) {
-		System.out.println(name + "book is returned");
+		System.out.println(name + "book is returned.");
 	}
 
 	public void setFirstName(String firstName) {
