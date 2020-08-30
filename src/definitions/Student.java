@@ -1,5 +1,5 @@
 /*  User: Himanshu Gaur
- *  Date: 21/08/20
+ *  Date: 30/08/20
  *  Time: 3:49 PM
  *  File Name : Student.java
  * */
@@ -11,7 +11,7 @@ public class Student {
 	private String firstName;
 	private String middleName;
 	private String lastName;
-	private long int universityRollNumber;
+	private long universityRollNumber;
 	private int issuedBooks;
 	private Book[] issuedBooksName;
 	
@@ -31,7 +31,7 @@ public class Student {
 	
 	// constructor() method with parameters.
 
-	public Student(String firstName, String middleName, String lastName, int universityRollNumber, int bookIssued, Boom[] issuedBooksName) {
+	public Student(String firstName, String middleName, String lastName, long universityRollNumber, int bookIssued, Book[] issuedBooksName) {
 		this.firstName = firstName;
 		this.middleName = middleName;
 		this.lastName = lastName;
@@ -44,7 +44,7 @@ public class Student {
 	
 	public void addBook(String name) {
         System.out.println(name + " is issued to the Student.");
-    
+    }
 
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -70,11 +70,11 @@ public class Student {
 		return lastName;
 	}
 
-	public void setUniversityRollNumber(int universityRollNumber) {
+	public void setUniversityRollNumber(long universityRollNumber) {
 		this.universityRollNumber = universityRollNumber;
 	}
 
-	public int getUniversityRollNumber() {
+	public long getUniversityRollNumber() {
 		return universityRollNumber;
 	}
 
