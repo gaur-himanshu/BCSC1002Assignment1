@@ -51,6 +51,8 @@ public class FrontDesk {
 					System.out.println("The name of all books which is/are issued.")
 					System.out.println(student.getIssuedBooksName);
 					break;
+				default:
+				    break;
 		    }
 		}
     }
