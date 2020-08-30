@@ -18,6 +18,7 @@ public class FrontDesk {
 	
     public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		String bookName;
 	    int studentInput;
 	    Student student = new Student();
 	    do {
@@ -39,7 +40,10 @@ public class FrontDesk {
 		    studentInput = scanner.nextInt();
 		    switch (studentInput) {
 			    case ISSUE_A_NEW_BOOK:
-					System.out.println("
+					System.out.println("Please! Enter the book name do you want to issue");
+					student.addBook(scanner.nextLine());
+					break;
+		        
 		    }
 		}
     }
