@@ -43,7 +43,10 @@ public class FrontDesk {
 					System.out.println("Please! Enter the book name do you want to issue");
 					student.addBook(scanner.nextLine());
 					break;
-		        
+		        case RETURN_PREVIOUS_BOOK:
+		            System.out.println("Enter the name of book do you want to return")
+		            sudent.returnBook(scanner.nextLine());
+		            break;
 		    }
 		}
     }
