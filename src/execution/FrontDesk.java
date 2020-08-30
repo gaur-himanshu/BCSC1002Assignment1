@@ -21,13 +21,26 @@ public class FrontDesk {
 	    int studentInput;
 	    Student student = new Student();
 	    do {
-		System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
-		System.out.println("How may I help you today?");
-		System.out.println("1. Issue a new book for me.");
-		System.out.println("2. Return a previously issues book for me.");
-		System.out.println("3. Show me all my issues books.");
-		System.out.println("4. Exit.");
-		System.out.println("Please choose from 1 to 4 as per your requirement");
+		    System.out.println("Enter your first name")
+		    student.setFirstName(scanner.nextLine());
+			System.out.println("Enter your middle name");
+			student.setMiddleName(scanner.nextLine());
+			System.out.println("Enter your last name");
+			student.setLastName(scanner.nextLine());
+			System.out.println("Enter your University roll number");
+			student.setUniversityRollNumber(scanner.nextLong);
+			System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
+		    System.out.println("How may I help you today?");
+		    System.out.println("1. Issue a new book for me.");
+		    System.out.println("2. Return a previously issues book for me.");
+		    System.out.println("3. Show me all my issues books.");
+		    System.out.println("4. Exit.");
+		    System.out.println("Please choose from 1 to 4 as per your requirement");
+		    studentInput = scanner.nextInt();
+		    switch (studentInput) {
+			    case ISSUE_A_NEW_BOOK:
+					System.out.println("
+		    }
 		}
     }
 }
