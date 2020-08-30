@@ -1,5 +1,5 @@
 /*  User: Himanshu Gaur
- *  Date: 21/08/20
+ *  Date: 30/08/20
  *  Time: 3:50 PM
  *  File Name : Library.java
  * */
@@ -70,7 +70,6 @@ public class Library {
 	
 	// the equals and hashcode method
 	
-
     @Override
     public boolean equals(Object o) {
         if (this == o) {
