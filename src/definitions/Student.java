@@ -121,4 +121,12 @@ public class Student {
         VideoStore that = (VideoStore) o;
         return this.getFirstName().equals(getFirstName()) && this.getMiddleName().equals(getMiddleName()) && this.getLastName().equals(getLastName()) && this.getUniversityRollNumber() == getUniversityRollNumber() && this.getIssuedBooks() == getIssuedBooks && Arrays.equals(getIssuedBooksName(), that.getIssuedBooksName());
     }
+	
+	// the hashcode methode
+	
+	@Override
+    public int hashCode() {
+        int[] result = {Objects.hash(getFirstName(), getMiddleName(), getLastName(), getUniversityRollNumber(), getIssuedBooks()), Array.hashcode(getIssuedBooksName())};
+        return result;
+    }
 }
