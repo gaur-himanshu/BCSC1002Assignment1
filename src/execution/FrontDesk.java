@@ -47,6 +47,10 @@ public class FrontDesk {
 		            System.out.println("Enter the name of book do you want to return")
 		            sudent.returnBook(scanner.nextLine());
 		            break;
+				case SHOW_ALL_ISSUED_BOOKS:
+					System.out.println("The name of all books which is/are issued.")
+					System.out.println(student.getIssuedBooksName);
+					break;
 		    }
 		}
     }
